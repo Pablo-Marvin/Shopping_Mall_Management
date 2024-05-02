@@ -1,0 +1,247 @@
+/* HomePage.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('P:\reactproject\c2tc\src\Component\images\your-image-url.jpg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-style: italic; /* Make the text style italic */
+}
+
+nav {
+  font-style: italic; 
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  margin: 0 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  background-color: transparent;
+}
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Add smooth transition */
+  position: relative;
+}
+
+nav a:hover {
+  background: linear-gradient(135deg, #78f8fc, #fffffffe);
+  background-size: 200% 200%;
+  animation: waterGlow 3s infinite;
+  background-color: #000000bf;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, #ffffff, transparent); /* Water glowing effect */
+  transform: scale(0);
+  transition: transform 0.3s ease; /* Add transition for the glowing effect */
+  border-radius: 5px; /* Add rounded corners to the glowing effect */
+  z-index: -1;
+}
+
+nav a:hover::before {
+  transform: scale(1);
+}
+
+
+section {
+  padding: 40px;
+}
+
+h2 {
+  color: #232020;
+  font-style: italic; /* Make the text style italic */
+  padding: 5px; /* Reduce the size of padding to half */
+  background: linear-gradient(90deg, #b3e0ff, #66a3ff); /* Water 3D effect with a linear gradient */
+  border-radius: 5px; /* Add rounded corners to h2 padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to h2 padding */
+  display: inline-block; /* Make the padding fit the text */
+}
+
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* AddData.css */
+
+.add-data-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  background: linear-gradient(135deg, #83fff9, #fffffffe);
+  background-size: 200% 200%;
+  animation: waterGlow 3s infinite;
+  font-style: italic; 
+  display: inline-block;
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.744); /* Set a slightly transparent background color */
+  padding: 8px; /* Apply the same padding for all sides */
+  border-radius: 5px;
+  color: #000000e4;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255); /* Add a subtle text shadow */
+}
+
+input {
+  width: 450px; /* Set a fixed width */
+  padding: 10px;
+  border: 2px solid #49fd61;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  transition: border-color 0.3s;
+  font-style: italic;
+}
+
+input:hover {
+  border-color: #0056b3;
+}
+
+.add-item-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-item-button:hover {
+  background-color: #0056b3;
+}
+
+/* styles.css */
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-style: italic;
+  background: linear-gradient(135deg, #78f8fc, #000000fe);
+  background-size: 200% 200%;
+  animation: waterGlow 3s infinite;
+  color: #f0f0f0;
+}
+
+th {
+  background-color: #ffffff;
+  color: white;
+}
+
+tr:not(:hover) {
+  background-color: rgba(170, 234, 237, 0.638); /* Slightly transparent color for non-hovered state */
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+button {
+  
+  position: relative;
+  padding: 8px 15px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  font-style: italic; /* Make the text style italic */
+}
+
+button:hover {
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 165, 0, 0.7), 0 0 30px rgba(255, 255, 0, 0.7);
+}
+h3 {
+  position: relative;
+  font-style: italic;
+  color: #fff; /* Set text color to white for visibility */
+  padding: 10px; /* Add padding to h3 */
+  overflow: hidden;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(255, 102, 0, 0.8), transparent); /* Fire glow effect */
+  transform: scale(1.5);
+  z-index: -1;
+}
+
+h3::after {
+ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em; /* Adjust text size */
+  color: #fff; /* Set text color to white for visibility */
+  z-index: 1;
+}
+h1 {
+  font-style: italic;
+  color: #fff;
+}
+
+
